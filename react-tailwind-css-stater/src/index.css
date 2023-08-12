@@ -75,7 +75,7 @@ body {
   .grid-container {
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 0.7fr 2.3fr;
     grid-template-areas:
       "nav nav nav"
       "aside main main"

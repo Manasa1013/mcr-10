@@ -17,7 +17,7 @@ export function ProductProvider({ children }) {
   const [state, dispatch] = useReducer(ProductReducer, initialState);
   useEffect(() => {
     dispatch({ type: "SET_PRODUCTS", payload: [...inventoryData] });
-  });
+  }, []);
   return (
     <ProductContext.Provider value={{ state, dispatch }}>
       {children}
